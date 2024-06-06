@@ -1,5 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  padding-top: 56px;
+  padding-top: 60px;
 }
 
 .custom-navbar {
@@ -37,7 +40,7 @@ body {
   transform: scale(1.1);
 }
 
-.card-articles{
+.card-articles {
   margin: 15px;
 }
 

@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Healthcare Company</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Healthcare</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
-                <li class="nav-item"><a class="nav-link" href="medicine.html">Medicine</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            </ul>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
+  <body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+
+    <h1 class="container-fluid my-5 text-center">This Page is Under Development</h1>
     <!-- Services Section -->
     <section class="container my-5">
-        <h2>Our Services and Pricing</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Diagnostic Tests</h4>
-                <ul>
-                    <li>Blood Test - $50</li>
-                    <li>CT Scan - $300</li>
-                    <li>MRI - $500</li>
-                </ul>
-            </div>
-            <!-- Add more services and pricing as needed -->
+      <h2>Our Services and Pricing</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Diagnostic Tests</h4>
+          <ul>
+            <li>Blood Test - $50</li>
+            <li>CT Scan - $300</li>
+            <li>MRI - $500</li>
+          </ul>
         </div>
+        <!-- Add more services and pricing as needed -->
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start">
-        <div class="container p-4">
-            <p>Contact Us: <a href="mailto:info@healthcare.com">info@healthcare.com</a></p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+      // Load the footer from an external file
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
 
+    <!-- All Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
