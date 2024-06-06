@@ -1,0 +1,52 @@
+body {
+  padding-top: 56px;
+}
+
+.custom-navbar {
+  background-color: #005592;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-nav .nav-link {
+  color: #fff !important; /* Change text color */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #ccc !important; /* Change text color on hover */
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px; /* Increase font size */
+  margin-right: 20px; /* Increase gap between items */
+}
+
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-tips {
+  transition: transform 0.3s ease;
+  margin: 15px;
+}
+
+.card-tips:hover {
+  transform: scale(1.1);
+}
+
+.card-articles{
+  margin: 15px;
+}
+
+.article-image {
+  height: 600px; /* Set the desired height for the article image */
+  object-fit: cover; /* Ensure the image covers the specified height */
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}

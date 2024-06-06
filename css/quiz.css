@@ -1,0 +1,79 @@
+#quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10%;
+  background-color: #d1daff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  font-style: italic;
+}
+
+#question {
+  display: none;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: none;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  display: block;
+  min-width: 20%;
+  margin: 20 auto;
+  padding: 10px 20px;
+  background-color: rgb(227, 238, 10), 245, 161;
+  color: #131313;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003823;
+  color: #fff;
+}
+
+#submit {
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+#note {
+  margin-top: 5%;
+}
+
+#restart
+{
+    display: none;
+}
+
+.Turn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Turn:hover {
+  background-color: #d60000;
+}
