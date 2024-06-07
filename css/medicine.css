@@ -1,0 +1,44 @@
+.card-body {
+  text-align: left;
+}
+
+.modal-body .form-control {
+  margin-bottom: 10px;
+}
+
+.medicine-info {
+  background-color: #f0f8ff; /* Example background color */
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px;
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  transition: transform 0.3s ease;
+}
+
+.medicine-info:hover {
+  transform: scale(1.1);
+}
+
+.medicine-info .medicine-details {
+  flex: 1;
+  /* Allow the details to take up the remaining space */
+}
+
+.medicine-info .pic {
+  flex: 0 0 auto; /* Prevent the image from growing */
+  width: 80%; /* Set a fixed width for the image container */
+  margin-right: 20px; /* Adjust spacing between the image and details */
+}
+
+.medicine-info .pic img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  border-radius: 15px; /* Apply border radius to the image */
+  object-fit: cover; /* Maintain aspect ratio and center the image */
+}
+
+.price-container {
+  font-weight: bold;
+}

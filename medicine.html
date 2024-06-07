@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/medicine.css" />
 </head>
 
 <body>
@@ -21,25 +22,209 @@
             });
     </script>
 
-    <h1 class="container-fluid my-5 text-center">
-        This Page is Under Development
-    </h1>
     <!-- Medicine Section -->
     <section class="container my-5">
-        <h2>Popular Medicines</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/medicine1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Medicine 1</h5>
-                        <p class="card-text">Price: $10.00</p>
+        <h1 class="text-center">Buy Popular Medicines</h1>
+        <div class="row gy-6">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="medicine-info d-flex flex-column align-items-center">
+                    <div class="pic">
+                        <img src="images/Medicine/Paracetamol.jpg" class="img-fluid" alt="Medicine Image" />
+                    </div>
+                    <div class="medicine-details text-center mt-3">
+                        <h3 class="medicineName">Paracetamol 500mg</h3>
+                        <p class="medicine-usage">Usage: Pain relief</p>
+                        <p class="price-container">
+                            Price: $<span class="medicinePrice">10.00</span>
+                        </p>
+                        <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                            Buy Now
+                        </button>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="medicine-info d-flex flex-column align-items-center">
+                    <div class="pic">
+                        <img src="images/Medicine/Omeprazole.jpg" class="img-fluid" alt="Medicine Image" />
+                    </div>
+                    <div class="medicine-details text-center mt-3">
+                        <h3 class="medicineName">Omeprazole 20mg</h3>
+                        <p class="medicine-usage">Usage: Acid reflux, GERD</p>
+                        <p class="price-container">
+                            Price: $<span class="medicinePrice">18.00</span>
+                        </p>
+                        <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="medicine-info d-flex flex-column align-items-center">
+                    <div class="pic">
+                        <img src="images/Medicine/metfomin.jpg" class="img-fluid" alt="Medicine Image" />
+                    </div>
+                    <div class="medicine-details text-center mt-3">
+                        <h3 class="medicineName">Metformin 500mg</h3>
+                        <p class="medicine-usage">Usage: Diabetes management</p>
+                        <p class="price-container">
+                            Price: $<span class="medicinePrice">20.00</span>
+                        </p>
+                        <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="medicine-info d-flex flex-column align-items-center">
+                    <div class="pic">
+                        <img src="images/Medicine/atorvastatin.jpg" class="img-fluid" alt="Medicine Image" />
+                    </div>
+                    <div class="medicine-details text-center mt-3">
+                        <h3 class="medicineName">Atorvastatin 20mg</h3>
+                        <p class="medicine-usage">Usage: Cholesterol management</p>
+                        <p class="price-container">
+                            Price: $<span class="medicinePrice">25.00</span>
+                        </p>
+                        <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="medicine-info d-flex flex-column align-items-center">
+                    <div class="pic">
+                        <img src="images/Medicine/aspirin.jpg" class="img-fluid" alt="Medicine Image" />
+                    </div>
+                    <div class="medicine-details text-center mt-3">
+                        <h3 class="medicineName">Aspirin 81mg</h3>
+                        <p class="medicine-usage">Usage: Blood thinner, pain relief</p>
+                        <p class="price-container">
+                            Price: $<span class="medicinePrice">5.00</span>
+                        </p>
+                        <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="medicine-info d-flex flex-column align-items-center">
+                    <div class="pic">
+                        <img src="images/Medicine/Montelukast.jpg" class="img-fluid" alt="Medicine Image" />
+                    </div>
+                    <div class="medicine-details text-center mt-3">
+                        <h3 class="medicineName">Montelukast 10mg</h3>
+                        <p class="medicine-usage">Usage: Asthma, allergic rhinitis</p>
+                        <p class="price-container">
+                            Price: $<span class="medicinePrice">22.00</span>
+                        </p>
+
+                        <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Repeat similar blocks for more medicines -->
         </div>
     </section>
+
+    <!-- Buy Now Modal -->
+    <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyModalLabel">Buy Medicine</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="buyForm">
+                        <input type="hidden" id="medicineName" />
+                        <input type="hidden" id="medicinePrice" />
+                        <div class="form-group">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="pin">PIN</label>
+                            <input type="password" class="form-control" id="pin" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" min="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="totalPrice">Total Price</label>
+                            <input type="text" class="form-control" id="totalPrice" readonly />
+                        </div>
+                        <button type="button" class="btn btn-primary" id="proceedToConfirmation">
+                            Proceed
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">
+                        Confirm Purchase
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="confirmationMessage"></p>
+                    <button type="button" class="btn btn-primary" id="confirmPurchase">
+                        Confirm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">
+                        Purchase Successful
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Your purchase has been confirmed. Thank you for your order!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
@@ -56,7 +241,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/medicine.js"></script>
 </body>
 
 </html>
