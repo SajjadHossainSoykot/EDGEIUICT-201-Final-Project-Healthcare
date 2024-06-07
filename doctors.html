@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doctor's Appointment</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>
-        fetch("navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctors</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/doctors.css" />
+</head>
 
-    <h1 class="container-fluid my-5 text-center">This Page is Under Development</h1>
-    <!-- Doctors Section -->
-    <section class="container my-5">
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+  </script>
+  <!-- Doctors Section -->
+  <!-- <section class="container my-5">
       <h2>Our Doctors</h2>
       <div class="row">
         <div class="col-md-4">
@@ -38,25 +35,255 @@
             </div>
           </div>
         </div>
-        <!-- Repeat similar blocks for more doctors -->
       </div>
-    </section>
+    </section> -->
+  <!-- Doctors Section -->
+  <section id="doctors" class="doctors section">
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h1>Doctors</h1>
+      <h3><i>Meet Our Highly Qualified Specialist Doctors</i></h3>
+    </div>
+    <!-- End Section Title -->
 
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-    <script>
-      // Load the footer from an external file
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
+    <div class="container">
+      <div class="row gy-6">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="images/doctors/doctors-1.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Sajjad Hossain Soykot</h4>
+              <span>Neurosurgeon</span>
+              <p>
+                MBBS (IU), BCS, FCPS, MD (USA)<br />
+                Professor, IU Medical College.
+              </p>
+              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Team Member -->
 
-    <!-- All Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="images/doctors/doctors-2.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Nusrat Jahan Shithy</h4>
+              <span>Cardiologist</span>
+              <p>
+                MBBS (IU), BCS, FCPS<br />
+                Professor, IU Medical College.
+              </p>
+              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Team Member -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="images/doctors/doctors-3.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Tuhassinul Arnob</h4>
+              <span>Sexologist</span>
+              <p>
+                MBBS (IU), BCS, FCPS<br />
+                Professor, IU Medical College.
+              </p>
+              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Team Member -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="images/doctors/doctors-4.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Halima Akter</h4>
+              <span>Anesthesiologist</span>
+              <p>
+                MBBS (IU), BCS, FCPS<br />
+                Associate Professor, IU Medical College.
+              </p>
+              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Team Member -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="images/doctors/doctors-5.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Zubaer Ahmed</h4>
+              <span>Orthopedics</span>
+              <p>
+                MBBS (IU), BCS, FCPS<br />
+                Associate Professor, IU Medical College.
+              </p>
+              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Team Member -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="images/doctors/doctors-6.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info" id="dr6">
+              <h4>Dr. Rony Islam</h4>
+              <span>ENT</span>
+              <p>
+                MBBS (IU), BCS, FCPS<br />
+                Associate Professor, IU Medical College.
+              </p>
+              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Team Member -->
+
+      </div>
+    </div>
+  </section>
+  <!--\End Doctors Section -->
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="appointment section">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <h2>Make an Appointment</h2>
+        <h6><i>Submit your details below to make an appointment.</i></h6>
+      </div>
+
+      <form id="appointment-form" class="needs-validation" action="submit.php" method="post" novalidate>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" required />
+            <div class="invalid-feedback">Please provide your full name.</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required />
+            <div class="invalid-feedback">Please provide a valid email.</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" required />
+            <div class="invalid-feedback">
+              Please provide your phone number.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="datetime">Appointment Date & Time</label>
+            <input type="datetime-local" class="form-control" id="datetime" required>
+            <div class="invalid-feedback">
+              Please select a date and time.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="doctor">Doctor</label>
+            <select class="form-control" id="doctor" required>
+              <option value="">Select Doctor</option>
+              <option value="dr1">Dr. Sajjad Hossain Soykot</option>
+              <option value="dr2">Dr. Nusrat Jahan Shithy</option>
+              <option value="dr3">Dr. Tuhassinul Arnob</option>
+              <option value="dr4">Dr. Halima Akter</option>
+              <option value="dr5">Dr. Zubaer Ahmed</option>
+              <option value="dr6">Dr. Rony Islam</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a doctor.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message (Optional)</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Write here your problems..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+
+
+    <!-- Initial Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmationModalLabel">Confirm Your Appointment</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to confirm this appointment?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" id="confirmAppointment">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Confirmation Modal -->
+    <div class="modal fade" id="finalConfirmationModal" tabindex="-1" aria-labelledby="finalConfirmationModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="finalConfirmationModalLabel">Appointment Confirmed</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Thank you for making an appointment. We will contact you soon!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    // Load the footer from an external file
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- All Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/appointment.js"></script>
+</body>
+
 </html>

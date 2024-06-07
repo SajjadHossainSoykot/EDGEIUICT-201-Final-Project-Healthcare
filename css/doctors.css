@@ -1,0 +1,70 @@
+/* Custom styles for the Doctors Section */
+.doctors {
+  background-color: #002244;
+  color: #fff;
+  min-height: 100vh;
+  padding: 30px;
+  margin: 0;
+}
+.doctors .team-member {
+  background-color: #f0f8ff; /* Example background color */
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+.doctors .team-member:hover {
+  transform: scale(1.1);
+}
+
+.doctors .pic {
+  margin: 20px; /* Adjust the gap between the photo and info */
+}
+.doctors .pic img {
+  border-radius: 50%;
+  border: #000000;
+  width: 120px;
+  height: 120px;
+}
+
+.doctors .member-info {
+  flex: 1; /* Allow the member info to take up the remaining space */
+}
+
+.doctors .member-info h4 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.doctors .member-info span {
+  display: block;
+  color: #0d0404;
+  margin-bottom: 10px;
+}
+.doctors .member-info p {
+  display: block;
+  color: #000000;
+  font-style: italic;
+}
+
+#appointment {
+  padding: 100px;
+  background-color: #f9f9f9;
+}
+
+#appointment-form {
+  margin-top: 25px;
+}
+
+#appointment-form .form-row {
+  margin-bottom: 5px;
+}
+
+#appointment-form .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
