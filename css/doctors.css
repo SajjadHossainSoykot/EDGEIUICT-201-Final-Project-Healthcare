@@ -3,7 +3,7 @@
   background-color: #002244;
   color: #fff;
   min-height: 100vh;
-  padding: 30px;
+  padding: 10px;
   margin: 0;
 }
 .doctors .team-member {
@@ -24,8 +24,9 @@
 .doctors .pic img {
   border-radius: 50%;
   border: #000000;
-  width: 120px;
-  height: 120px;
+  width: 90%; /* Adjust based on your layout */
+  max-width: 120px; /* Maximum width */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
 }
 
 .doctors .member-info {
@@ -50,7 +51,7 @@
 }
 
 #appointment {
-  padding: 100px;
+  padding: 100px 30px;
   background-color: #f9f9f9;
 }
 
