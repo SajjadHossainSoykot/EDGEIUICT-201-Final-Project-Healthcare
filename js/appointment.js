@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Dr. Zubaer Ahmed",
             specialty: "Dermatologist",
             image: "images/doctors/doctors-5.jpg",
-            details: "MBBS (IU), BCS, FCPS<br>AssociateProfessor, IU Medical College."
+            details: "MBBS (IU), BCS, FCPS<br>Associate Professor, IU Medical College."
         },
         dr6: {
             name: "Dr. Rony Islam",
             specialty: "Pediatrician",
             image: "images/doctors/doctors-6.jpg",
-            details: "MBBS (IU), BCS, FCPS<br>AssociateProfessor, IU Medical College."
+            details: "MBBS (IU), BCS, FCPS<br>Associate Professor, IU Medical College."
         }
     };
 
