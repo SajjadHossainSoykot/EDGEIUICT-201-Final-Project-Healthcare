@@ -10,11 +10,12 @@ body {
 }
 .custom-navbar .navbar-brand,
 .custom-navbar .navbar-nav .nav-link {
-  color: #fff !important; /* Change text color */
+  color: #fff ; /* Change text color */
 }
 
+.custom-navbar .navbar-brand:hover,
 .custom-navbar .navbar-nav .nav-link:hover {
-  color: #ccc !important; /* Change text color on hover */
+  color: #ccc ; /* Change text color on hover */
 }
 
 .navbar-nav .nav-link {
