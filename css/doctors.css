@@ -3,47 +3,59 @@
   background-color: #002244;
   color: #fff;
   min-height: 100vh;
-  padding: 35px 10px;
-  margin: 0;
+  padding: 35px 12%;
 }
+
 .doctors .team-member {
-  background-color: #f0f8ff; /* Example background color */
+  background-color: #f0f8ff;
+  /* Example background color */
   border: 1px solid #ddd;
   border-radius: 15px;
   padding: 10px;
   margin: 20px;
   transition: transform 0.3s ease;
 }
+
 .doctors .team-member:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 8px 4px #fd0000a6;
 }
 
 .doctors .pic {
-  margin: 20px; /* Adjust the gap between the photo and info */
+  margin: 20px;
+  /* Adjust the gap between the photo and info */
 }
+
 .doctors .pic img {
   border-radius: 50%;
   border: #000000;
-  width: 90%; /* Adjust based on your layout */
-  max-width: 120px; /* Maximum width */
-  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  width: 90%;
+  /* Adjust based on your layout */
+  max-width: 120px;
+  /* Maximum width */
+  height: auto;
+  /* Automatically adjust height to maintain aspect ratio */
 }
 
 .doctors .member-info {
-  flex: 1; /* Allow the member info to take up the remaining space */
+  flex: 1;
+  /* Allow the member info to take up the remaining space */
 }
 
 .doctors .member-info h4 {
-  color: #000000;
+  color: #002244;
+  font-weight: bold;
   font-size: 1.5rem;
   margin-top: 10px;
 }
 
-.doctors .member-info span {
+.doctors .member-info h5 {
   display: block;
   color: #0d0404;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
 .doctors .member-info p {
   display: block;
   color: #000000;

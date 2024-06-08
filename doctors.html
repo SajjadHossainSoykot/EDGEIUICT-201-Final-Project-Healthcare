@@ -21,22 +21,7 @@
         document.getElementById("navbar-placeholder").innerHTML = data;
       });
   </script>
-  <!-- Doctors Section -->
-  <!-- <section class="container my-5">
-      <h2>Our Doctors</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/doctor1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Dr. Sajjad Hossain Soykot</h5>
-              <p class="card-text">Specialist in Cardiology</p>
-              <a href="#" class="btn btn-primary">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+  
   <!-- Doctors Section -->
   <section id="doctors" class="doctors section">
     <!-- Section Title -->
@@ -46,117 +31,8 @@
     </div>
     <!-- End Section Title -->
 
-    <div class="container">
-      <div class="row gy-6">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="images/doctors/doctors-1.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Sajjad Hossain Soykot</h4>
-              <span>Neurosurgeon</span>
-              <p>
-                MBBS (IU), BCS, FCPS, MD (USA)<br />
-                Professor, IU Medical College.
-              </p>
-              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Team Member -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="images/doctors/doctors-2.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Nusrat Jahan Shithy</h4>
-              <span>Cardiologist</span>
-              <p>
-                MBBS (IU), BCS, FCPS<br />
-                Professor, IU Medical College.
-              </p>
-              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Team Member -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="images/doctors/doctors-3.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Tuhassinul Arnob</h4>
-              <span>Sexologist</span>
-              <p>
-                MBBS (IU), BCS, FCPS<br />
-                Professor, IU Medical College.
-              </p>
-              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Team Member -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="images/doctors/doctors-4.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Halima Akter</h4>
-              <span>Anesthesiologist</span>
-              <p>
-                MBBS (IU), BCS, FCPS<br />
-                Associate Professor, IU Medical College.
-              </p>
-              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Team Member -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="images/doctors/doctors-5.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Zubaer Ahmed</h4>
-              <span>Orthopedics</span>
-              <p>
-                MBBS (IU), BCS, FCPS<br />
-                Associate Professor, IU Medical College.
-              </p>
-              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Team Member -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="images/doctors/doctors-6.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info" id="dr6">
-              <h4>Dr. Rony Islam</h4>
-              <span>ENT</span>
-              <p>
-                MBBS (IU), BCS, FCPS<br />
-                Associate Professor, IU Medical College.
-              </p>
-              <a class="btn btn-primary appointment-btn" href="#appointment">Book Appointment</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Team Member -->
-
-      </div>
+    <div id="team-container" class="row gy-6">
+      <!-- Doctor cards will be appended here by JavaScript -->
     </div>
   </section>
   <!--\End Doctors Section -->
@@ -169,7 +45,7 @@
         <h6><i>Submit your details below to make an appointment.</i></h6>
       </div>
 
-      <form id="appointment-form" class="needs-validation" action="submit.php" method="post" novalidate>
+      <form id="appointment-form" class="needs-validation" action="appointment-submit.php" method="post" novalidate>
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="name">Full Name</label>
@@ -200,21 +76,15 @@
         </div>
         <div class="form-row">
           <div class="col-md-12 mb-3">
-            <label for="doctor">Doctor</label>
-            <select class="form-control" id="doctor" required>
-              <option value="">Select Doctor</option>
-              <option value="dr1">Dr. Sajjad Hossain Soykot</option>
-              <option value="dr2">Dr. Nusrat Jahan Shithy</option>
-              <option value="dr3">Dr. Tuhassinul Arnob</option>
-              <option value="dr4">Dr. Halima Akter</option>
-              <option value="dr5">Dr. Zubaer Ahmed</option>
-              <option value="dr6">Dr. Rony Islam</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a doctor.
-            </div>
+              <label for="doctor">Doctor</label>
+              <select class="form-control" id="doctor" required>
+                  <option value="">Select Doctor</option>
+              </select>
+              <div class="invalid-feedback">
+                  Please select a doctor.
+              </div>
           </div>
-        </div>
+      </div>
         <div class="form-group">
           <label for="message">Message (Optional)</label>
           <textarea class="form-control" id="message" rows="3" placeholder="Write here your problems..."></textarea>

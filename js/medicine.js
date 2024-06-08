@@ -1,13 +1,87 @@
 $(document).ready(function () {
+    // Define an array of medicine details
+    const medicines = [
+        {
+            name: "Paracetamol 500mg",
+            image: "images/Medicine/Paracetamol.jpg",
+            usage: "Pain relief",
+            price: 10.00
+        },
+        {
+            name: "Omeprazole 20mg",
+            image: "images/Medicine/Omeprazole.jpg",
+            usage: "Acid reflux, GERD",
+            price: 18.00
+        },
+        {
+            name: "Metformin 500mg",
+            image: "images/Medicine/metfomin.jpg",
+            usage: "Diabetes management",
+            price: 20.00
+        },
+        {
+            name: "Atorvastatin 20mg",
+            image: "images/Medicine/atorvastatin.jpg",
+            usage: "Cholesterol management",
+            price: 25.00
+        },
+        {
+            name: "Aspirin 81mg",
+            image: "images/Medicine/aspirin.jpg",
+            usage: "Blood thinner, pain relief",
+            price: 5.00
+        },
+        {
+            name: "Montelukast 10mg",
+            image: "images/Medicine/Montelukast.jpg",
+            usage: "Asthma, allergic rhinitis",
+            price: 22.00
+        
+        }
+        // Add more medicines as needed
+    ];
+
+    // Function to generate medicine cards
+    function generateMedicineCards() {
+        const medicineCardsContainer = document.getElementById('medicineCards');
+        medicineCardsContainer.innerHTML = ''; // Clear previous cards
+
+        medicines.forEach(function (medicine) {
+            const cardHtml = `
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="medicine-info d-flex flex-column align-items-center">
+                        <div class="pic">
+                            <img src="${medicine.image}" class="img-fluid" alt="Medicine Image" />
+                        </div>
+                        <div class="medicine-details text-center mt-3">
+                            <h3 class="medicineName">${medicine.name}</h3>
+                            <p class="medicine-usage">Usage: ${medicine.usage}</p>
+                            <p class="price-container">
+                                Price: $<span class="medicinePrice">${medicine.price.toFixed(2)}</span>
+                            </p>
+                            <button class="btn btn-primary buy-now" data-toggle="modal" data-target="#buyModal">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            medicineCardsContainer.innerHTML += cardHtml;
+        });
+    }
+
+    // Call the function to generate medicine cards
+    generateMedicineCards();
+
     // Event listener for opening the modal
-    $('.buy-now').on('click', function () {
+    $('#medicineCards').on('click', '.buy-now', function () {
         var cardBody = $(this).closest('.medicine-details');
         var name = cardBody.find('.medicineName').text();
         var price = cardBody.find('.medicinePrice').text();
 
         $('#medicineName').val(name);
         $('#medicinePrice').val(price);
-        $('#buyModalLabel').text('Buy ' + name);
+        $('#buyModalLabel').text('Buy: ' + name);
         $('#quantity').val(1);
         $('#totalPrice').val('$' + price);
     });
