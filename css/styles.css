@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   padding-top: 60px;
 }
@@ -8,54 +9,45 @@ body {
 .custom-navbar {
   background-color: #005592;
 }
+
 .custom-navbar .navbar-brand,
 .custom-navbar .navbar-nav .nav-link {
-  color: #fff ; /* Change text color */
+  color: #fff;
+  /* Change text color */
 }
 
 .custom-navbar .navbar-brand:hover,
 .custom-navbar .navbar-nav .nav-link:hover {
-  color: #ccc ; /* Change text color on hover */
+  color: #ccc;
+  /* Change text color on hover */
 }
 
 .navbar-nav .nav-link {
-  font-size: 20px; /* Increase font size */
-  margin-right: 20px; /* Increase gap between items */
+  font-size: 20px;
+  /* Increase font size */
+  margin-right: 20px;
+  /* Increase gap between items */
 }
+
 .custom-navbar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Change icon color to light */
-}
-#carouselExampleIndicators
-{
-margin-top: 15px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* Change icon color to light */
 }
 
-.carousel-item img {
-  max-height: 85vh;
-  object-fit:contain;
-}
-.card img {
-  max-height: 200px;
-  object-fit: cover;
+#carouselExampleIndicators {
+  margin-top: 15px;
 }
 
-.card-tips {
-  transition: transform 0.3s ease;
-  margin: 15px;
-}
-
-.card-tips:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 4px 2px #005dfd77;
-}
 
 .card-articles {
   margin: 15px;
 }
 
 .article-image {
-  height: 600px; /* Set the desired height for the article image */
-  object-fit: cover; /* Ensure the image covers the specified height */
+  height: 600px;
+  /* Set the desired height for the article image */
+  object-fit: cover;
+  /* Ensure the image covers the specified height */
 }
 
 footer {

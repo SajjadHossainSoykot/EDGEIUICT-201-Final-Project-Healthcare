@@ -1,0 +1,30 @@
+.card-tips {
+    transition: transform 0.3s ease;
+    padding: 15px;
+    margin: 20px;
+}
+
+.card-tips .card-body {
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-tips .card-title {
+    margin: 10px;
+}
+
+.card-tips .card-text {
+    flex: 1;
+}
+
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-tips:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 4px 2px #005dfd77;
+}
