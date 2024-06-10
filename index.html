@@ -50,14 +50,12 @@
     </div>
 
     <!-- Health Tips Section -->
-    <div id="tips-placeholder"></div>
-    <script>
-        fetch("tips.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("tips-placeholder").innerHTML = data;
-            });
-    </script>
+    <section class="container-fluid my-5 text-center custom-tips">
+        <h1>Health Tips</h1>
+        <div class="row mx-auto my-5" id="tipsContainer">
+            <!-- Tips will be dynamically generated here -->
+        </div>
+    </section>
 
     <!-- Articles and Quiz Section -->
     <div id="article-placeholder"></div>
@@ -110,6 +108,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/tips.js"></script>
 </body>
 
 </html>
