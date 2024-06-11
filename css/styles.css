@@ -9,6 +9,9 @@ body {
 .custom-navbar {
   background-color: #005592;
 }
+.custom-navbar .navbar-brand {
+  padding-left: 2%;
+}
 
 .custom-navbar .navbar-brand,
 .custom-navbar .navbar-nav .nav-link {

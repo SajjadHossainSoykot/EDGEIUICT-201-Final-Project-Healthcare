@@ -1,79 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="icon" type="image/x-icon" href="/images/icon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>
-        fetch("navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="icon" type="image/x-icon" href="/images/icon.svg" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css" />
 
-    <h1 class="container-fluid my-5 text-center">
-      This Page is Under Development
-    </h1>
-    <section class="about-section py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">About Soykot Healthcare</h2>
-        <div class="row">
-          <div class="col-md-8 offset-md-2 text-justify">
-            <p>
-              Soykot Healthcare, founded by Mr. Sajjad Hossain Soykot, is committed to providing compassionate and comprehensive healthcare services to our community. With a focus on excellence and innovation, we strive to deliver the highest quality of care to our patients, empowering them to lead healthier lives.
-            </p>
-            <h3>Mr. Sajjad Hossain Soykot</h3>
-            <p>
-              Mr. Sajjad Hossain Soykot is a renowned healthcare entrepreneur with a vision to revolutionize the healthcare industry. He holds a Bachelor of Medicine, Bachelor of Surgery (MBBS) degree from a prestigious medical university and has extensive experience in healthcare management and administration. As the founder of Soykot Healthcare, he is dedicated to improving healthcare accessibility and affordability for all.
-            </p>
-            <h3>Our Mission</h3>
-            <p>
-              To enhance the health and well-being of individuals and families by delivering exceptional healthcare services with integrity, compassion, and professionalism.
-            </p>
-            <h3>Our Vision</h3>
-            <p>
-              To be a trusted leader in healthcare, known for our commitment to excellence, innovation, and patient-centered care.
-            </p>
-            <h3>Why Choose Soykot Healthcare?</h3>
-            <ul>
-              <li>Expert Team: Our team of experienced healthcare professionals is dedicated to providing personalized care tailored to each patient's needs.</li>
-              <li>State-of-the-Art Facilities: We utilize advanced technology and state-of-the-art facilities to deliver cutting-edge healthcare services.</li>
-              <li>Compassionate Care: At Soykot Healthcare, we understand that healthcare is not just about treating illnesses but also about providing compassionate support and guidance to our patients and their families.</li>
-              <li>Community Engagement: We actively engage with our community through various outreach programs and initiatives aimed at promoting health education and awareness.</li>
-            </ul>
-            <!-- Additional content such as services, commitment, etc. can be added here -->
+</head>
+
+<bod>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- About -->
+  <section id="about" class="pt-5 pb-5">
+    <div class="container text-justify">
+      <div class="row text-center mb-5">
+        <div class="col-md-12">
+          <h2>About Soykot Health Care</h2>
+          <p class="lead">Discover the story and mission behind our highly-rated healthcare company.</p>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <h3>Company Overview</h3>
+          <p>Soykot Health Care, founded by Sajjad Hossain Soykot, is a highly-rated healthcare company dedicated to
+            providing top-quality medical services. With a focus on excellence and customer satisfaction, Soykot Health
+            Care has become a trusted name in the industry.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Mission and Vision</h3>
+          <p>Our mission at Soykot Health Care is to improve the well-being of individuals and communities by offering
+            the best medical services with specialists doctors, high-quality medicines, and top-notch diagnostic tests
+            using modern technology. We envision a future where accessible and high-quality healthcare is available to
+            everyone.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center">Founder’s Vision</h3>
+          <p>Sajjad Hossain Soykot, the visionary founder of Soykot Health Care, embarked on a mission to revolutionize
+            the healthcare industry by establishing a company that prioritizes quality, efficacy, and customer
+            satisfaction above all else. With a deep-rooted passion for healthcare and a relentless dedication to
+            innovation, Sajjad Hossain Soykot has led Soykot Health Care to its current position as a highly-rated
+            healthcare provider. His visionary leadership has inspired the team to push boundaries, challenge
+            conventions, and set new standards of excellence in the pursuit of better health outcomes for all.</p>
+        </div>
+      </div>
+      <h3 class="text-center">Services Offered</h3>
+      <div class="row mb-4 my-2">
+        <div class="col-md-6">
+          <div class="icon-box">
+            <i class="fas fa-notes-medical"></i>
+            <div>
+              <h4>Medicines</h4>
+              <p>High-quality pharmaceutical products for various medical conditions.</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-user-md"></i>
+            <div>
+              <h4>Specialist Consultations</h4>
+              <p>Access to experienced and skilled doctors across various medical specialties.</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-x-ray"></i>
+            <div>
+              <h4>Diagnostic Tests</h4>
+              <p>State-of-the-art diagnostic facilities equipped with modern technology for accurate diagnoses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="icon-box">
+            <i class="fas fa-hospital"></i>
+            <div>
+              <h4>Inpatient Services</h4>
+              <p>Comprehensive medical care and support for hospitalized patients.</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-user-nurse"></i>
+            <div>
+              <h4>Nursing Care</h4>
+              <p>Professional nursing services to ensure patients' comfort and well-being.</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <div>
+              <h4>Educational Workshops</h4>
+              <p>Informative sessions on skincare best practices and trends.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-    <script>
-      // Load the footer from an external file
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
+      <div class="col-md-12 text-center">
+        <h3>Health Articles and Tips</h3>
+        <p>At Soykot Health Care, we are dedicated to empowering our community with valuable health insights and
+          resources. Explore our regularly updated collection of health articles, expert tips, quizzes, and resources to
+          stay informed and make proactive decisions about your health and well-being. Whether you're seeking advice on
+          managing a specific health condition, tips for maintaining a healthy lifestyle, or the latest trends in
+          healthcare, we've got you covered. Join us on our journey to promote health literacy and empower individuals
+          to lead healthier, happier lives.</p>
+      </div>
 
-    <!-- All Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    // Load the footer from an external file
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- All Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
   </body>
+
 </html>
